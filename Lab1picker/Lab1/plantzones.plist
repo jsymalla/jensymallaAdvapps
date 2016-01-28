@@ -1,0 +1,80 @@
+<?xml version ="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist>
+<plist version="1.0">
+	<dict>
+	
+		<key>Zone 3</key>
+			<array>
+				<string>Hostas</string>
+				<string>Day Lilies</string>
+				<string>Hemerocallis</string>
+				<string>Echinacea</string>
+				<string>Hydrangea</string>
+				<string>Blue Spruce</string>
+			</array>
+		<key>Zone 4</key>
+			<array>
+				<string>Coneflowers</string>
+				<string>Heuchera</string>
+				<string>Rose</string>
+				<string>Salvia</string>
+				<string>Mischanthus</string>
+				<string>Clematis</string>
+			</array>
+		<key>Zone 5</key>
+			<array>
+				<string>Geranium Rozanne</string>
+				<string>Pennisetum</string>
+				<string>Lavendar</string>
+				<string>Festuca Boulder Blue</string>
+				<string>Dianthus</string>
+				<string>Viola Etain</string>
+			</array>
+		<key>Zone 6</key>
+			<array>
+				<string>Athyrium Ghost</string>
+				<string>Thuja Emerald</string>
+				<string>Aruncus Dioicus</string>
+				<string>Sedum Voodoo</string>
+				<string>Buddleia</string>
+				<string>Thymus Wooly</string>
+			</array>
+		<key>Zone 7</key>
+			<array>
+				<string>Escargot Begonia</string>
+				<string>Mahonia</string>
+				<string> Pink Astilbe</string>
+				<string>Tulips</string>
+				<string>Gomphrena</string>
+				<string>Bee Balm</string>
+			</array>
+		<key>Zone 8</key>
+			<array>
+				<string>Phlox Blue Paradise</string>
+				<string>Sedum Angelina</string>
+				<string>Ajuga Black Scallop</string>
+				<string>Carex Evergold</string>
+				<string>Cortaderia Pumila</string>
+				<string>Sagina Subulata</string>
+			</array>	
+		<key>Zone 9</key>
+			<array>
+				<string>Brunnera</string>
+				<string>Dryopteris Brillance</string>
+				<string>Rudbeckia Goldstrum</string>
+				<string>Lonicera John Clayton</string>
+				<string>Vinca Minor Bowles</string>
+				<string>Sedumsod</string>
+			</array>
+		<key>Zone 10</key>
+			<array>
+				<string>Daffodils</string>
+				<string>Zinnia</string>
+				<string>Blue Bonnet</string>
+				<string>Iris Moss</string>
+				<string>Gerbera</string>
+				<string>Sunflowers</string>
+			</array>
+	</dict>
+</plist>
+	

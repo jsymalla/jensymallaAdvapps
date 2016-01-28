@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coneflower" translatesAutoresizingMaskIntoConstraints="NO" id="aCn-xg-CiW">
+                                <rect key="frame" x="0.0" y="145" width="600" height="320"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best Plants For Your Zone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6YR-tW-C4z">
+                                <rect key="frame" x="151" y="55" width="298" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="298" id="djd-NV-r2x"/>
+                                    <constraint firstAttribute="height" constant="32" id="ehs-tt-DXN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.094117656349999995" green="0.62352943419999995" blue="0.1019607931" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="aCn-xg-CiW" secondAttribute="trailing" id="4JN-5U-QKH"/>
+                            <constraint firstItem="aCn-xg-CiW" firstAttribute="top" secondItem="6YR-tW-C4z" secondAttribute="bottom" constant="58" id="LxI-8W-V80"/>
+                            <constraint firstItem="6YR-tW-C4z" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="35" id="M1X-0I-cfL"/>
+                            <constraint firstItem="aCn-xg-CiW" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="llY-uT-xYK"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="aCn-xg-CiW" secondAttribute="bottom" constant="135" id="mzO-DQ-5IJ"/>
+                            <constraint firstItem="6YR-tW-C4z" firstAttribute="centerX" secondItem="aCn-xg-CiW" secondAttribute="centerX" id="oVD-vw-HTF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="144" y="333"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="coneflower" width="275" height="183"/>
+    </resources>
+</document>
