@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Denver Restaurant Eating Challenges</key>
+	<array>
+		<string>Grand Sicilian Pizza</string>
+		<string>WTF Wings</string>
+		<string>Four Pound Burrito</string>
+		<string>Big Bad Wolf Challenge</string>
+		<string>The Govanator</string>
+		<string>Nuclear Roll</string>
+		<string>Four Pound Steak</string>
+		<string>The Cow Tipper</string>
+		<string>The Barnyard Challenge</string>
+		<string>Corono del Diablo</string>
+	</array>
+	<key>Mini Golf Courses in Denver</key>
+	<array>
+		<string>Adventure Golf and Raceway</string>
+		<string>Amusement Park at Heritage Square</string>
+		<string>Aqua Golf</string>
+		<string>Boondocks Fun Center</string>
+		<string>Colorado Journey Miniature Golf Course</string>
+		<string>Family Sports Outdoor Miniature Golf</string>
+		<string>Gateway Park Fun Center</string>
+		<string>Go Putt Miniature Golf</string>
+		<string>Monster Mini Golf</string>
+		<string>Putting Edge Colorado</string>
+	</array>
+	<key>Odd Conventions in Denver</key>
+	<array>
+		<string>Comic Con</string>
+		<string>ProGreen Expo</string>
+		<string>American Psychosomatic Society Annual Meeting</string>
+		<string>ASTRA Toy Convention and Expo</string>
+		<string>StarFest</string>
+		<string>Sleep</string>
+	</array>
+	<key>Rare Plants You Might Find in Denver</key>
+	<array>
+		<string>Broadleaved Twayeblade</string>
+		<string>Moonworts</string>
+		<string>Picturelead Wintergreen</string>
+		<string>Rattlesnake Fern</string>
+		<string>Yellow Lady&apos;s Slipper</string>
+		<string>Lesser Rattlesnake-Plaintain</string>
+		<string>White Adder&apos;s Mouth</string>
+		<string>Dwarf Leadplant</string>
+		<string>Sandhill Goosefoot</string>
+		<string>Colorado Green Gentian</string>
+		<string>Wyoming Feverfew</string>
+	</array>
+	<key>Strange Sculptures Around Denver</key>
+	<array>
+		<string>“Mustang” by Luis Jimenez</string>
+		<string>“Dancers” by Jonathan Borofsky</string>
+		<string>“Articulated Wall” by Herbert Bayers</string>
+		<string>“I See What You Mean” by Lawrence Argent</string>
+		<string>“National Velvet” by John McEnroe</string>
+		<string>&quot;Sun Spot&quot;</string>
+		<string>Big Chair with Horse</string>
+		<string>&quot;Big Sweep&quot; by Cossje van Bruggen and Claes Oldenburg</string>
+		<string>Giant Pencil</string>
+		<string>&quot;Notre Denver&quot; by Terry Allen</string>
+	</array>
+</dict>
+</plist>
