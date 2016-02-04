@@ -17,7 +17,7 @@ class SearchResultsController: UITableViewController, UISearchResultsUpdating {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "CellIdentifer")
+        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "CellIdentifier")
         
 
         // Uncomment the following line to preserve selection between presentations
@@ -49,7 +49,7 @@ class SearchResultsController: UITableViewController, UISearchResultsUpdating {
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 0
+        return 1
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
