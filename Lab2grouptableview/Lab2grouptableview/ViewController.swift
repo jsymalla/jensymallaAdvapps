@@ -57,6 +57,10 @@ class ViewController: UITableViewController {
         return cell
     }
     
+    //Adding individual subtitles Rference:stackoverflow.com/questions/1851284/how-to-add-a-subtext-to-a-table-cell
+    
+    
+    
     //UITableViewDelegate method that is called when a row is selected
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let section = indexPath.section
@@ -80,9 +84,10 @@ class ViewController: UITableViewController {
     }
     
     //adds a section index
-    override func sectionIndexTitlesForTableView(tableView: UITableView) -> [String]? {
-        return topics
-    }//errors out with [AnyObject]!
+    //The [String!] value adds the entire phrase which is too large, cutting off the headers and titles
+    //override func sectionIndexTitlesForTableView(tableView: UITableView) -> [String]? {
+    //   return topics
+    //}//errors out with [AnyObject]!
 }
 
 

@@ -48,6 +48,10 @@ class SearchResultsController: UITableViewController, UISearchResultsUpdating {
         return filteredWords.count
     }
     
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 0
+    }
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("CellIdentifier", forIndexPath: indexPath)
         cell.textLabel?.text = filteredWords[indexPath.row]
@@ -61,7 +65,5 @@ class SearchResultsController: UITableViewController, UISearchResultsUpdating {
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 0
-    }
+    
 }
