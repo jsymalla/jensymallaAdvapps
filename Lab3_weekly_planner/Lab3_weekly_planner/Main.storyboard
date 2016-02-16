@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dfW-cv-E9m">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--MY WEEKLY PLANNER-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="MY WEEKLY PLANNER" id="BYZ-38-t0r" customClass="ViewController" customModule="Lab3_weekly_planner" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="CLy-SP-AAs">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="CellIdentifier" id="loK-2i-wG6">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="loK-2i-wG6" id="tQm-lr-ht1">
+                                    <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="ApM-sk-iJw" kind="show" identifier="activitysegue" id="JJk-cj-3iF"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="BYZ-38-t0r" id="Ktb-nZ-AGk"/>
+                            <outlet property="delegate" destination="BYZ-38-t0r" id="v7V-fa-wvi"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="MY WEEKLY PLANNER" id="Fg8-Fb-8sK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1085" y="273"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="qjZ-p0-pTI">
+            <objects>
+                <tableViewController id="ApM-sk-iJw" customClass="DetailViewController" customModule="Lab3_weekly_planner" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="4gl-GE-lDA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellIdentifier" id="Inr-3F-ahy">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Inr-3F-ahy" id="akc-7q-CQT">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ApM-sk-iJw" id="kSh-N1-vDy"/>
+                            <outlet property="delegate" destination="ApM-sk-iJw" id="p3b-pl-xF3"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="bFD-QX-IwH">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="14q-ad-J37">
+                            <connections>
+                                <segue destination="Abh-6A-ABF" kind="presentation" id="lJ5-EU-Ux5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PVr-0w-2rm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1737" y="273"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lN5-B7-d4L">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dfW-cv-E9m" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GPY-Jq-4bC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="IBb-ly-fhb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7MO-gr-vbx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="273" y="273"/>
+        </scene>
+        <!--ADD AN ACTIVITY-->
+        <scene sceneID="Yib-IB-jZn">
+            <objects>
+                <viewController id="wQ4-dg-3ae" customClass="AddActivityViewController" customModule="Lab3_weekly_planner" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HUI-rd-AlZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="KHS-ZY-neN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lV7-jk-rky">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XWB-Iz-HXs">
+                                <rect key="frame" x="244" y="151" width="235.5" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACTIVITY:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H9D-BG-Wt9">
+                                <rect key="frame" x="118" y="154" width="76.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KHS-ZY-neN" firstAttribute="top" secondItem="XWB-Iz-HXs" secondAttribute="bottom" constant="419" id="5NN-6u-xIC"/>
+                            <constraint firstItem="H9D-BG-Wt9" firstAttribute="top" secondItem="HUI-rd-AlZ" secondAttribute="bottom" constant="90" id="IAb-xl-0By"/>
+                            <constraint firstItem="XWB-Iz-HXs" firstAttribute="leading" secondItem="H9D-BG-Wt9" secondAttribute="trailing" constant="49.5" id="MgU-MY-rN0"/>
+                            <constraint firstItem="H9D-BG-Wt9" firstAttribute="leading" secondItem="lV7-jk-rky" secondAttribute="leadingMargin" constant="98" id="PfB-QC-jTQ"/>
+                            <constraint firstItem="XWB-Iz-HXs" firstAttribute="top" secondItem="HUI-rd-AlZ" secondAttribute="bottom" constant="87" id="e9P-yi-h0S"/>
+                            <constraint firstItem="XWB-Iz-HXs" firstAttribute="trailing" secondItem="lV7-jk-rky" secondAttribute="trailingMargin" constant="-100.5" id="kmK-tx-LF3"/>
+                            <constraint firstItem="KHS-ZY-neN" firstAttribute="top" secondItem="H9D-BG-Wt9" secondAttribute="bottom" constant="425" id="xZC-qe-bfS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="ADD AN ACTIVITY" id="Kb5-5v-QEj">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="5ho-yf-k36">
+                            <connections>
+                                <segue destination="TRX-SQ-aNP" kind="unwind" identifier="cancelSegue" unwindAction="unwindSegue:" id="rvS-SM-MJ2"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="kq9-A3-WGU">
+                            <connections>
+                                <segue destination="TRX-SQ-aNP" kind="unwind" identifier="doneSegue" unwindAction="unwindSegue:" id="nMw-Q3-ZYX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="activityTextfield" destination="XWB-Iz-HXs" id="6UE-UE-nMB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kd1-qB-EeD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="TRX-SQ-aNP" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3196" y="273"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="VQz-c7-e0N">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Abh-6A-ABF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0z6-uh-AMC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wQ4-dg-3ae" kind="relationship" relationship="rootViewController" id="pZr-yY-mm1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bqb-ya-ppn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2384" y="273"/>
+        </scene>
+    </scenes>
+</document>

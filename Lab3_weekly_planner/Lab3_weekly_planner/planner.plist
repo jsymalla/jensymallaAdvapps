@@ -1,0 +1,54 @@
+<?xml version ="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist>
+<plist version="1.0">
+	<dict>
+		<key>Monday</key>
+			<array>
+				<string>Work</string>
+				<string>Speaker Series</string>
+				<string>Business Dinner</string>
+				<string>Study Period</string>
+			</array>
+		<key>Tuesday</key>
+			<array>
+				<string>Gym</string>
+				<string>Class</string>
+				<string>Lunch</string>
+				<string>Study Period</string>
+				<string>Class</string>
+			</array>
+		<key>Wednesday</key>
+			<array>
+				<string>Work</string>
+				<string>Club Meeting</string>
+				<string>Study Period</string>
+			</array>
+		<key>Thursday</key>
+			<array>
+				<string>Gym</string>
+				<string>Class</string>
+				<string>Lunch</string>
+				<string>Study Period</string>
+				<string>Class</string>
+			</array>
+		<key>Friday</key>
+			<array>
+				<string>Work</string>
+				<string>Club Meeting</string>
+			</array>
+		<key>Saturday</key>
+			<array>
+				<string>Gym</string>
+				<string>Study Period</string>
+				<string>Meet with Friends</string>
+			</array>
+		<key>Sunday</key>
+			<array>
+				<string>Clean Apartment</string>
+				<string>Laundry</string>
+				<string>Bills</string>
+				<string>Study Period</string>
+				<string>Grocery Shop</string>
+			</array>
+	</dict>
+</plist>
