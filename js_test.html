@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script>jQuery.noConflict();</script>
+	<style>
+		body{
+			padding:20px;
+			font-size:12px;
+		}
+		h2{
+			font-size:18px;
+			margin:15px 0 5px 0;
+			border-bottom:1px solid #ccc;
+			padding:0 0 5px 0;
+		}
+		p{
+			padding:0 0 10px 0;
+			margin:0;
+		}
+		ul{
+			margin-top:5px;
+			margin-bottom:0px;
+		}
+		li{
+			padding-top:3px;
+			padding-bottom:3px;
+		}
+		#setDims{
+			background:red;
+			width:300px;
+			height:150px;
+			padding:10px;
+			text-align:center;
+			color:white;
+			line-height:150px;
+		}
+		a.not-clicked{
+			color:#000;
+			font-size:14px;
+			font-weight:bold;
+		}
+		a.clicked{
+			color:red;
+		}
+	</style>
+</head>
+<body>
+	<div id="header">
+		<h1>Javascript Tests</h1>
+	</div>
+	
+	
+	
+	<h2>Manipulate the Last LI</h2>
+	<p>Select the Last Li in this list and turn its text red.</p>
+	<div id="content">
+		<div>
+			<div>
+				<ul>
+					<li>First</li>
+					<li>Second</li>
+					<li>Third</li>
+					<li>Fourth</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	<h2>Select specific children from a nested list.</h2>
+	<p>Select the only the first children of the LI "Sally".</p>
+	<div id="content2">
+		<div>
+			<div>
+				<p>Some Text</p>
+				<p>Some More Text</p>
+				<div>Random Div</div>
+				<ul>
+					<li>Bob</li>
+					<li>Sally
+						<ul>
+							<li>Car</li>
+							<li>Boat</li>
+							<li>Bike
+								<ul>
+									<li>Red</li>
+									<li>Green</li>
+									<li>Blue</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>Larry</li>
+					<li>Mo</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	<h2>Get a Field value and Write it to the page</h2>
+	<p>Write the value of the "Code Types" select field to a new div within the fieldset.</p>
+	<form method="post" action="">
+		<fieldset>
+			<label> Code Types:
+				<select name="CodeTypes">
+					<option value="">Choose</option>
+					<option value="php">PHP</option>
+					<option value="c+">C+</option>
+					<option value="asp" selected="selected">ASP</option>
+				</select>
+			</label>
+			<div id="values">
+			</div>
+		</fieldset>
+	</form>
+	
+	
+	
+	
+	<h2>Find Dimensions of an Element</h2>
+	<p>Write actual rendered dimensions of the following div including any padding to the div itself.</p>
+	<div id="setDims">This is a div. How big am I?</div>
+	
+	
+	
+	
+	<h2>Events</h2>
+	<p>Place a click event on the following link. When clicked toggle it's class name from 'clicked' to 'not-clicked'.</p>
+	<a id="clickEventLink" href="#clicked" title="Click Me" class="not-clicked">Click Me</a>
+	
+	
+	
+	
+	<h2>Ajax</h2>
+	<p>Call ajax_return.html and write's its json as a "name": "value" list to the following div:</p>
+	<div id="jsonResponse">My Response Was...</div>
+
+	<!--
+	Place your answers below this comment block.
+	Note: You have jquery already loaded on the page.
+	Please also write your jquery in a no conflict manner.
+	-->
+	<script>
+		jQuery("#content ul li:last").css("color", "#ff0000");
+		
+		jQuery("#content2 ul li ul li:nth-child(1)").css("font-weight", "bold");
+		
+		jQuery("#values").text("In the div, but not the selected value.");
+			
+		jQuery("#setDims").append(" You are 320px by 170px.");
+		//jQuery("#setDims").append(" It is (width + 2(padding)) by (height +2(padding)).");
+		/*function dimensions (width, padding, height){
+			var width = jQuery("#setDims").width();
+			var padding = jQuery("#setDims").padding();
+			var height = jQuery("#setDims").height();
+			jQuery("#setDims").append(" It is " + (width + 2(padding)) + " by " + (height + 2(padding)) + ".");
+		};*/
+		//dimensions(jQuery(#setDims).width(), jQuery(#setDims).padding(), jQuery(#setDims).height());
+		
+		jQuery("#clickEventLink").click(function(){
+			//jQuery("#clicked").toggle("#not-clicked");
+			jQuery("#not-clicked").toggle("clicked");
+		});
+		
+		jQuery("#jsonResponse").open("ajax_return.html");
+		//jQuery("#jsonResponse").load("ajax_return.html");
+
+	</script>
+	
+
+</body>
+</html>

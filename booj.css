@@ -1,0 +1,250 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+/* header */
+header{
+	width: 100%;
+	height: 80px;
+}
+#logo{
+	float: left;
+	margin: 5px 100px 10px 35px;
+}
+.inline{
+	float: right;
+}
+#contact-icons{
+	margin: 10px 35px 0px 370px; 
+}
+#call-icon{
+	margin-right: 10px;
+}
+.caption{
+	font-size: .75em;
+	color: rgb(73, 152, 163);
+}
+#nav1{
+	float: right;
+	text-align: center;
+	font-size: 1em;
+	margin: 10px 0px 0px 0px;
+}
+#nav1 li a{
+	text-decoration: none;
+	color: rgb(95, 96, 96);
+}
+#nav1 li{
+	display: inline;
+	margin-right: 35px;
+}
+#nav1 a:hover{
+	color: rgb(7, 129, 129);
+}
+
+/* nav */
+nav{
+	width: 100%;
+	height: 35px;
+	font-size: .8em;
+	display: inline-block;
+	background-color: rgb(179, 181, 181);
+	box-shadow: 4px 4px 4px rgb(179, 181, 181); 		
+}
+nav li a{
+	text-decoration: underline;
+	color: rgb(255, 255, 255);
+	margin: 0px 0px 0px 70px;
+}
+nav li{
+	display: inline;
+}
+nav a:hover{
+	color: rgb(7, 129, 129);
+}
+#nav-fields{
+	margin: 2px 0px 0px 0px;
+}
+#address{
+	width: 190px;
+	margin: 0px 10px 0px 100px;
+}
+#button{
+    background-color: rgb(7,129,129);
+    border: none;
+    color: white;
+    padding: 5px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+#listings{
+	margin: 9px 0px 0px 150px;
+}
+.float-left{
+	float: left;
+}
+
+/* image and Contact information section */
+#contact{
+	width: 100%;
+	height: 250px;
+	background-color: rgb(238, 240, 241);
+}
+#sara{
+	float: left;
+	margin-left: 100px;	
+}
+#jane{
+	float: left;
+	margin: 50px 0px 50px 100px;	
+}
+#name{
+	font-size: 2em;
+	margin-bottom: 10px;
+	color: rgb(95, 96, 96);	
+}
+#realtor{
+	font-size: .75em;
+	color: rgb(176, 179, 179);
+	margin-bottom: 10px;
+}
+#button2{
+	background-color: rgb(7,129,129);
+    border: none;
+    color: white;
+    padding: 5px 61px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    margin: 4px 2px;
+    cursor: pointer;
+	margin-bottom: 15px;
+}
+#facebook, #linkedin, #twitter, #youtube{
+	padding-right: 30px;
+}
+#broker-info{
+	float: left;
+	margin: 50px 0px 50px 190px;		
+}
+
+#call{
+	color: rgb(95, 96, 96);
+}
+#call, #website, #office{
+	padding-bottom: 20px
+}
+.color{
+	color: rgb(73, 152, 163);
+}
+/* text section */
+#info{
+	width: 100%;
+	height: 380px;
+	margin: 30px 100px;
+}
+#nav2{
+	font-size: 1em;
+}
+#nav2 li a{
+	text-decoration: underline;
+	color: rgb(176, 179, 179);
+	margin: 0px 100px 0px 100px;
+}
+#nav2 li{
+	display: inline;
+}
+#nav2 a:hover{
+	color: rgb(7, 129, 129);
+}
+#text{
+	float: left;
+	width: 730px;
+	height: 300px;
+	margin: 30px 130px 30px 0px;
+	color: rgb(95, 96, 96);
+}
+#skills{
+	float: left;
+	width: 200px;
+	height: 300px;
+	margin: 30px 130px 30px 0px;
+}
+#language, #designations{
+	margin-bottom: 10px;
+	color: rgb(95, 96, 96);
+}
+#langs{
+	margin-bottom: 30px;
+}
+#langs, #abbrev{
+	font-size: .75em;
+	color: rgb(176, 179, 179);
+}
+/* footer */
+footer{
+	width: 100%;
+	height: 100px;
+	background-color: rgb(73, 152, 163);
+}
+#address1{
+	float: left;
+	width: 400px;
+	height: auto;
+	margin: 15px 100px 10px 100px;
+	color: rgb(255, 255, 255);
+}
+#call2{
+	font-size: .75em;
+	margin-bottom: 5px;
+}
+#denver{
+	font-size: .75em;
+	margin-bottom: 15px;
+}
+#facebook2, #linkedin2, #twitter2, #youtube2{
+	padding-right: 20px;
+}
+#conditions{
+	float: right;
+	width: 300px;
+	height: auto;
+	margin: 15px 100px 10px 0px;
+	color: rgb(255, 255, 255);
+}
+#nav3{
+	font-size: .75em;
+	text-align: right;
+}
+#nav3 li a{
+	text-decoration: underline;
+	color: rgb(255, 255, 255);
+	margin-left: 20px;
+}
+#nav3 li{
+	display: inline;
+}
+#nav3 a:hover{
+	color: rgb(238, 240, 241);
+}
+#copyright{
+	font-size: .75em;
+	text-align: right;
+	margin: 10px 0px;
+}
+#housing-images{
+	margin-left: 255px;
+}
+
+/* tablet/mini*/
+@media(max-width: 760px){
+	
+}
+
+/* smartphone*/
+@media(max-width: 480px){
+}
